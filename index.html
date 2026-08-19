@@ -3,108 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Type Dash | Code With Irfan Ali G</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>Your Website Title</title>
+  
+  <style>
+    /* Main Layout Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+
+    /* Main Website Content Container */
+    .main-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      min-height: 100vh;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    /* Side Banner Containers */
+    .side-ad {
+      position: fixed;
+      top: 50px; /* Distance from top of the screen */
+      width: 160px;
+      height: 600px;
+      z-index: 999;
+    }
+
+    .left-ad {
+      left: 10px; /* Fixed to the left margin */
+    }
+
+    .right-ad {
+      right: 10px; /* Fixed to the right margin */
+    }
+
+    /* HIDE ADS ON MOBILE & TABLETS
+       Prevents ads from overlapping content on small screens */
+    @media screen and (max-width: 1250px) {
+      .side-ad {
+        display: none !important;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="background-decor">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
+
+  <!-- LEFT SIDE ADSTERRA BANNER -->
+  <div class="side-ad left-ad">
+    <script>
+      atOptions = {
+        'key' : '63c5b6ee42ae23fa3dcc7381094b9b48',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/63c5b6ee42ae23fa3dcc7381094b9b48/invoke.js"></script>
   </div>
 
-  <main class="game-card" id="game-card">
-    <!-- Top Branding Title -->
-    <div class="creator-title">Code With Irfan Ali G</div>
-
-    <header class="game-header">
-      <h1 class="logo">⚡ Type Dash</h1>
-      <div class="controls">
-        <button id="sound-btn" class="icon-btn" aria-label="Toggle Sound">🔊</button>
-        <select id="difficulty-select" aria-label="Select Difficulty">
-          <option value="easy">Easy (Kids)</option>
-          <option value="medium" selected>Medium (Standard)</option>
-          <option value="hard">Hard (Pro)</option>
-        </select>
-        <select id="time-select" aria-label="Select Timer Duration">
-          <option value="15">15 Seconds</option>
-          <option value="30" selected>30 Seconds</option>
-          <option value="60">60 Seconds</option>
-        </select>
-      </div>
-    </header>
-
-    <!-- Interactive Arcade Stats -->
-    <section class="stats-bar">
-      <div class="stat-box">
-        <span class="stat-label">TIME</span>
-        <span class="stat-value" id="timer">30s</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">WPM</span>
-        <span class="stat-value" id="wpm">0</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">ACCURACY</span>
-        <span class="stat-value" id="accuracy">100%</span>
-      </div>
-      <div class="stat-box highlight">
-        <span class="stat-label">STREAK</span>
-        <span class="stat-value" id="streak">0x</span>
-      </div>
-      <div class="stat-box">
-        <span class="stat-label">BACKSPACES</span>
-        <span class="stat-value" id="backspaces">0</span>
-      </div>
-    </section>
-
-    <!-- Live Text Box -->
-    <section class="typing-area" id="typing-box" tabindex="0">
-      <div id="word-display" class="word-display">Click 'Start Game' or press Space to begin!</div>
-      <input type="text" id="hidden-input" autocomplete="off" autocapitalize="none" spellcheck="false">
-    </section>
-
-    <footer class="game-footer">
-      <button id="start-btn" class="btn btn-primary">Start Game</button>
-      <button id="restart-btn" class="btn btn-secondary">Restart</button>
-    </footer>
-  </main>
-
-  <!-- Game Over Result Modal -->
-  <div class="modal-overlay hidden" id="result-modal">
-    <div class="modal-card">
-      <h2 id="modal-title">🎉 Level Complete!</h2>
-      <p class="modal-subtitle" id="modal-rating">Rank: Keyboard Master</p>
-      
-      <div class="modal-grid">
-        <div class="m-stat">
-          <span id="final-wpm">0</span>
-          <label>Words / Min</label>
-        </div>
-        <div class="m-stat">
-          <span id="final-accuracy">0%</span>
-          <label>Accuracy</label>
-        </div>
-        <div class="m-stat">
-          <span id="final-streak">0</span>
-          <label>Best Streak</label>
-        </div>
-        <div class="m-stat">
-          <span id="final-backspaces">0</span>
-          <label>Backspaces</label>
-        </div>
-      </div>
-
-      <div class="score-banner">
-        TOTAL SCORE: <span id="final-score">0</span>
-      </div>
-
-      <button id="modal-restart-btn" class="btn btn-primary">Play Again 🚀</button>
-    </div>
+  <!-- RIGHT SIDE ADSTERRA BANNER -->
+  <div class="side-ad right-ad">
+    <script>
+      atOptions = {
+        'key' : '63c5b6ee42ae23fa3dcc7381094b9b48',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+      };
+    </script>
+    <script src="https://www.highperformanceformat.com/63c5b6ee42ae23fa3dcc7381094b9b48/invoke.js"></script>
   </div>
 
-  <canvas id="confetti-canvas"></canvas>
+  <!-- YOUR MAIN WEBSITE CONTENT GOES HERE -->
+  <div class="main-content">
+    <h1>Welcome to My Website</h1>
+    <p>This is where your main articles, videos, or tools go.</p>
+    <p>The left and right ads will float smoothly in the empty side margins as users scroll, and they will automatically hide on small screens or mobile phones so they do not block your content.</p>
+  </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
